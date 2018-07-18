@@ -86,7 +86,7 @@ public class MainGridActivity extends AppCompatActivity {
 
         public void loadPopularMovies(){
             showMovie();
-            String x = "084c79c7722ce9496963780c61fa46a1";
+            String x = "<<< api_key >>>";
             URL url = NetworkUtils.buildPopularMovieUrl(x);
             textRawData.setText(url.toString());
             new BackgroundTask_AsyncTask().execute(url);
@@ -94,7 +94,7 @@ public class MainGridActivity extends AppCompatActivity {
         }
 
         public void loadTopRatedMovies(){
-            String x = "084c79c7722ce9496963780c61fa46a1";
+            String x = "<<< api_key >>>";
             URL url = NetworkUtils.buildTopRatedMovieUrl(x);
             textRawData.setText(url.toString());
             new BackgroundTask_AsyncTask().execute(url);
@@ -102,7 +102,7 @@ public class MainGridActivity extends AppCompatActivity {
         }
 
         public void loadDiscoveredMovies(){
-            String x = "084c79c7722ce9496963780c61fa46a1";
+            String x = "<<< api_key >>>";
             URL url = NetworkUtils.buildDiscoverMovieUrl(x);
             Log.d(TAG, " : PassedBy#Subhojit -> loadDiscoveredMovies - buildDiscoverMovieUrl");
             textRawData.setText(url.toString());
